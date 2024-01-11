@@ -8,7 +8,7 @@ const config = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
-  prefix: "tw-app",
+  prefix: "",
   theme: {
     container: {
       center: true,

@@ -5,26 +5,26 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/common/libs/cn"
 
 const buttonVariants = cva(
-  "tw-appinline-flex tw-appitems-center tw-appjustify-center tw-appwhitespace-nowrap tw-approunded-md tw-apptext-sm tw-appfont-medium tw-apptransition-colors focus-visible:tw-appoutline-none focus-visible:tw-appring-1 focus-visible:tw-appring-ring disabled:tw-apppointer-events-none disabled:tw-appopacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         default:
-          "tw-appbg-primary tw-apptext-primary-foreground tw-appshadow hover:tw-appbg-primary/90",
+          "bg-primary text-primary-foreground shadow hover:bg-primary/90",
         destructive:
-          "tw-appbg-destructive tw-apptext-destructive-foreground tw-appshadow-sm hover:tw-appbg-destructive/90",
+          "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
-          "tw-appborder tw-appborder-input tw-appbg-background tw-appshadow-sm hover:tw-appbg-accent hover:tw-apptext-accent-foreground",
+          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
         secondary:
-          "tw-appbg-secondary tw-apptext-secondary-foreground tw-appshadow-sm hover:tw-appbg-secondary/80",
-        ghost: "hover:tw-appbg-accent hover:tw-apptext-accent-foreground",
-        link: "tw-apptext-primary tw-appunderline-offset-4 hover:tw-appunderline",
+          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+        ghost: "hover:bg-accent hover:text-accent-foreground",
+        link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        default: "tw-apph-9 tw-apppx-4 tw-apppy-2",
-        sm: "tw-apph-8 tw-approunded-md tw-apppx-3 tw-apptext-xs",
-        lg: "tw-apph-10 tw-approunded-md tw-apppx-8",
-        icon: "tw-apph-9 tw-appw-9",
+        default: "h-9 px-4 py-2",
+        sm: "h-8 rounded-md px-3 text-xs",
+        lg: "h-10 rounded-md px-8",
+        icon: "h-9 w-9",
       },
     },
     defaultVariants: {

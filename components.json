@@ -7,8 +7,7 @@
     "config": "tailwind.config.ts",
     "css": "src/app/globals.css",
     "baseColor": "slate",
-    "cssVariables": true,
-    "prefix": "tw-app"
+    "cssVariables": true
   },
   "aliases": {
     "components": "@/common/components",
